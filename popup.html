@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .filters {
+      background-color: #eee;
+      padding: 1rem;
+    }
+    .filters input[type="text"] {
+      padding: .5rem;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      padding: 1rem;
+    }
+    .links img {
+      cursor: pointer;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="filters">
+    <input type="text" id="filter" placeholder="Filter" />
+    <input type="checkbox" id="regex" />
+    <label for="regex">Regex</label>
+  </div>
+  <div class="links" id="links"></div>
+  <script src='popup.js'></script>
+</body>
+</html>
